@@ -1,0 +1,32 @@
+/* import dataset from https://www.kaggle.com/rtatman/chocolate-bar-ratings */
+
+/* a quick look */
+SELECT * FROM cacao
+LIMIT 5;
+
+/* Best rated companies */
+SELECT company, AVG(rating)
+FROM cacao
+GROUP BY company
+ORDER BY AVG(rating) DESC;
+
+/* Where are the best cocoa beans grown?*/
+
+SELECT broad_bean_origin, AVG(rating)
+FROM cacao
+GROUP BY broad_bean_origin
+ORDER BY AVG(rating) DESC;
+
+/* Which companies produce the highest-rated chocolate based on 2016-2017 reviews?*/
+
+SELECT company, AVG(rating) AS rating_2016_2017
+FROM cacao
+WHERE reviewdate IN (2016, 2017)
+GROUP BY company
+ORDER BY AVG(rating) DESC;
+
+
+
+
+
+
