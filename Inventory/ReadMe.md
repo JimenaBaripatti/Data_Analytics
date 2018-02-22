@@ -1,7 +1,7 @@
-#About this data
+# About this data
 This dataset keeps track of inventory since the company started and therefore a large number of items captured in the csv files were sold a long time ago. The business needs a logic that will tell us what’s still in inventory and what’s been sold.
 
-#Metadata 
+# Metadata 
 *Inventory that has the following concatenated locations (BeginInventory Location + ‘-‘ + EndingInventory Location) no longer exists and should be excluded:
 
  'PURCHASED-PURCHASED',
