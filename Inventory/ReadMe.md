@@ -2,7 +2,7 @@
 This dataset keeps track of inventory since the company started and therefore a large number of items captured in the csv files were sold a long time ago. The business needs a logic that will tell us what’s still in inventory and what’s been sold.
 
 # Metadata 
-*Inventory that has the following concatenated locations (BeginInventory Location + ‘-‘ + EndingInventory Location) no longer exists and should be excluded:
+* Inventory that has the following concatenated locations (BeginInventory Location + ‘-‘ + EndingInventory Location) no longer exists and should be excluded:
 
  'PURCHASED-PURCHASED',
 
@@ -34,9 +34,9 @@ This dataset keeps track of inventory since the company started and therefore a 
 
 'LOST_BY_CUSTOMER-LOST_BY_CUSTOMER'
 
-*Inventory items that we’re bought in the current month would have a previous month’s location of ‘New_Inventory’
+* Inventory items that we’re bought in the current month would have a previous month’s location of ‘New_Inventory’
 
-*Items that were sold in the current month have the following ending location codes (research what % does if you haven’t used it):
+* Items that were sold in the current month have the following ending location codes (research what % does if you haven’t used it):
 
 '%-PURCHASED' OR
 
@@ -50,7 +50,7 @@ LIKE '%-RECOUPED' OR
 
 LIKE 'RECOUPED-%'
 
-*For simplicity, the items that were not captured previously can be found in final inventory. Below should give you a hint on how to put together that list.
+* For simplicity, the items that were not captured previously can be found in final inventory. Below should give you a hint on how to put together that list.
 
 NOT LIKE '%-DAMAGED' AND
 
